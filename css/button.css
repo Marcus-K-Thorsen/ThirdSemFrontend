@@ -1,0 +1,38 @@
+.buttondelete {
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    color: #fff;
+    background-color:#0a0a23;
+}
+
+.buttonupdate {
+    border-radius:10px;
+    padding:5px;
+    color: #fff;
+    background-color: #2121cb;
+}
+
+.fancy-button {
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:5px;
+    padding:5px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+}
+
+.fancy-button:hover {
+    background-color:#002ead;
+    transition: 0.2s;
+}
+
+.fancy-button:active {
+    background-color: #ffbf00;
+    transition: none;
+}
+
+.xbutton {
+    position: absolute;
+    top:50%
+}
