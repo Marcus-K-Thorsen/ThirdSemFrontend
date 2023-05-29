@@ -1,6 +1,7 @@
-body {
+main {
     font-family: Arial, sans-serif;
-    background-color: #e7e4e4;
+    background-color: #ded1d1;
+    min-height: 500px;
 }
 
 h1 {
