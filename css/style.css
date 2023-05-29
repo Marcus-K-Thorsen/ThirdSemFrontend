@@ -4,6 +4,12 @@ main {
     min-height: 500px;
 }
 
+.border-boxed {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 h1 {
     text-align: center;
 }
