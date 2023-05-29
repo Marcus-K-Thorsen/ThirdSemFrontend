@@ -32,7 +32,7 @@ async function fetchResponse(url, request) {
         }
 
         errorMessage = responseData.message
-        console.log(`It was NOT accepted by the URL: '${url}' using the Request Method: '${request.method}'`)
+        console.error(`It was NOT accepted by the URL: '${url}' using the Request Method: '${request.method}'`)
         console.error(`Receiving from the backend the error message: '${errorMessage}'`)
 
         const indexOfTheActualMessage = errorMessage.indexOf(': ') + 2
@@ -41,7 +41,7 @@ async function fetchResponse(url, request) {
     } catch (error) {
         errorMessage = error.message
         if (error.message === "Failed to fetch") errorMessage = `Failed to establish contact to the url: '${url}'`;
-        console.log(`Trying to use the method 'fetchResponse' we caught the Error: '${error.message}'.`)
+        console.error(`Trying to use the method 'fetchResponse' we caught: '${error.message}'.`)
         console.error(error)
     }
 
