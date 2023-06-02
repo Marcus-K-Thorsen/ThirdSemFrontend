@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sejlads Deltagere</title>
+
+    <!-- //////////     BOOTSTRAP JS    \\\\\\\\\\\ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!-- //////////     BOOTSTRAP CSS    \\\\\\\\\\\ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- //////////     PERSONAL CSS    \\\\\\\\\\\ -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- //////////     FOREIGN SCRIPTS    \\\\\\\\\\\ -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- //////////     PERSONAL SCRIPTS    \\\\\\\\\\\ -->
+    <script src="../js/util/fetch-handling.js"></script>
+    <script src="../js/util/promise-handling.js"></script>
+    <script src="../js/util/form-handling.js"></script>
+
+    <script src="../js/controllers/EnumController.js"></script>
+    <script src="../js/controllers/SailboatController.js"></script>
+    <script src="../js/controllers/BoatRaceController.js"></script>
+    <script src="../js/controllers/ContestantController.js"></script>
+
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/contestant.js" defer></script>
+
+
+</head>
+<body>
+
+<!-- //////////     HEADER    \\\\\\\\\\\ -->
+<header id="navigation-bar"></header>
+
+<!-- //////////     MAIN CONTENT    \\\\\\\\\\\ -->
+<main>
+    <h1 style="margin-top: 70px; padding-bottom: 15px">Opret, vis, ret og slet konkkurrende sejlbåde her!</h1>
+
+    <br>
+
+
+    <form id="contestant-form">
+        <label for="inp-contestant-form-positon">Indtast pladsen i sejladset for Sejlbåden</label>
+        <input type="number" step="1" min="0" id="inp-contestant-form-positon" name="position" value="0">
+        <br>
+        <label for="dd-contestant-form-state">Vælg en Afslutnings Tilstand</label>
+        <select id="dd-contestant-form-state" name="state"></select>
+        <br>
+        <label for="dd-contestant-form-sailboat">Vælg en Sejlbåd</label>
+        <select id="dd-contestant-form-sailboat" name="sailboat"></select>
+        <br>
+        <label for="dd-contestant-form-race">Vælg et Sejlads</label>
+        <select id="dd-contestant-form-race" name="boatRace"></select>
+        <br>
+        <button type="submit" id="btn-submit-contestant-form">Opret Sejlads Deltager!</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="container" style="width: 500px">
+        <button class="btn btn-primary btn-block">Klik Mig!</button>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <th>Deltager ID</th>
+            <th>Position</th>
+            <th>Afslutnings Tilstand</th>
+            <th>Points</th>
+            <th>Sejlbåd Navn</th>
+            <th>Sejlbåd Type</th>
+            <th>Sejlads Navn</th>
+            <th>Sejlads Dato</th>
+            <th style="text-align: center">Handlinger</th>
+        </tr>
+        </thead>
+        <tbody id="tbl-contestant">
+
+        </tbody>
+    </table>
+</main>
+
+
+</body>
+</html>

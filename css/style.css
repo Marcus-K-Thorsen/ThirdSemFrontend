@@ -17,7 +17,7 @@ h1 {
 form {
     max-width: 500px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #dcdbcf;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -30,8 +30,8 @@ label {
 
 input {
     display: block;
-    width: 100%;
-    padding: 10px;
+    width: 80%;
+    padding: 6px;
     border-radius: 3px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
@@ -49,40 +49,18 @@ select {
 }
 
 button {
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #7fabe5;
+    color: #131212;
     padding: 10px 20px;
     border-radius: 3px;
     border: none;
     cursor: pointer;
+    font-weight: bolder;
+}
+
+button:hover {
+    color: #d8d8e7;
+    background-color: #0b4eaf;
 }
 
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: yellowgreen;
-}
-
-tr:nth-child(odd) {
-    background-color: indianred;
-}
-
-
-tr:hover {
-    background-color: #ddd;
-}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sejlbåde</title>
+
+    <!-- //////////     BOOTSTRAP JS    \\\\\\\\\\\ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- //////////     BOOTSTRAP CSS    \\\\\\\\\\\ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- //////////     PERSONAL CSS    \\\\\\\\\\\ -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- //////////     FOREIGN SCRIPTS    \\\\\\\\\\\ -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- //////////     PERSONAL SCRIPTS    \\\\\\\\\\\ -->
+    <script src="../js/util/fetch-handling.js"></script>
+    <script src="../js/util/promise-handling.js"></script>
+    <script src="../js/util/form-handling.js"></script>
+
+    <script src="../js/controllers/EnumController.js"></script>
+    <script src="../js/controllers/SailboatController.js"></script>
+
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/sailboat.js" defer></script>
+
+
+</head>
+<body>
+
+
+<!-- //////////     HEADER    \\\\\\\\\\\ -->
+    <header id="navigation-bar"></header>
+
+<!-- //////////     MAIN CONTENT    \\\\\\\\\\\ -->
+    <main>
+        <h1 style="margin-top: 70px; padding-bottom: 15px">Opret, vis, ret og slet sejlbåde her!</h1>
+
+        <br>
+
+
+        <form id="sailboat-form">
+            <label for="inp-sailboat-form-name">Indtast navnet på Sejlbåden:</label>
+            <input type="text" id="inp-sailboat-form-name" name="name">
+            <br>
+            <label for="dd-sailboat-form-type"></label>
+            <select id="dd-sailboat-form-type" name="type"></select>
+            <br>
+            <button type="submit" id="btn-submit-sailboat-form">Opret Sejlbåd!</button>
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+        <table class="table table-striped table-hover">
+            <thead class="thead-dark">
+            <tr>
+                <th>Sejlbåd ID</th>
+                <th>Sejlbåd Navn</th>
+                <th>Sejlbåd Type</th>
+                <th>Antal Sejlads Deltagelse</th>
+                <th style="text-align: center">Handlinger</th>
+            </tr>
+            </thead>
+            <tbody id="tbl-sailboats">
+
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>

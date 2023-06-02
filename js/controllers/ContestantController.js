@@ -1,5 +1,5 @@
 function getContestants(successMethod, errorMethod) {
-    const contestantsPromise = fetchAny(`/contestants}`, "GET",null)
+    const contestantsPromise = fetchAny(`/contestants`, "GET",null)
     return unpackPromise(contestantsPromise, successMethod, errorMethod)
 }
 
@@ -14,6 +14,6 @@ function addContestant(contestant, successMethod, errorMethod) {
 }
 
 function deleteContestant(contestantId, successMethod, errorMethod) {
-    const contestantDeletePromise = fetchAny(`/contestant`, "DELETE",null)
+    const contestantDeletePromise = fetchAny(`/contestant/${contestantId}`, "DELETE",null)
     return unpackPromise(contestantDeletePromise, successMethod, errorMethod)
 }
